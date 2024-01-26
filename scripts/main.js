@@ -8,7 +8,7 @@ soniaImage.onclick = () => {
   } else {
     soniaImage.setAttribute("src", "images/youngsonia.png");
   }
-};
+}
 
 
 
@@ -21,4 +21,30 @@ lilaImage.onclick = () => {
   } else {
     lilaImage.setAttribute("src", "images/younglila.png");
   }
-};
+}
+
+
+// Personalized welcome message!
+let myButton = document.querySelector('button');
+let myHeading = document.querySelector('h1');
+
+function setUserName() {
+  let myName = prompt('Please enter your name.');
+  if(!myName) {
+    setUserName();
+  } else {
+    localStorage.setItem('name', myName);
+    myHeading.innerHTML = 'Hello, ' + myName;
+  }
+}
+
+if(!localStorage.getItem('name')) {
+  setUserName();
+} else {
+  let storedName = localStorage.getItem('name');
+  myHeading.innerHTML = 'Hello, ' + storedName;
+}
+
+myButton.onclick = function() {
+  setUserName();
+}
