@@ -10,8 +10,6 @@ soniaImage.onclick = () => {
   }
 }
 
-
-
 const lilaImage = document.getElementById("lila");
 
 lilaImage.onclick = () => {
@@ -23,8 +21,7 @@ lilaImage.onclick = () => {
   }
 }
 
-
-// Personalized welcome message
+// Personalized welcome message code
 
 let myButton = document.querySelector('button');
 let myHeading = document.querySelector('h1');
