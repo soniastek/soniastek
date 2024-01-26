@@ -24,7 +24,8 @@ lilaImage.onclick = () => {
 }
 
 
-// Personalized welcome message!
+// Personalized welcome message
+
 let myButton = document.querySelector('button');
 let myHeading = document.querySelector('h1');
 
